@@ -16,7 +16,13 @@
     "isolatedModules": true,
     "noEmit": false,
     "noEmitOnError": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "tags": ["styled", "css", "sty"]
+      }
+    ]
   },
   "include": ["src"],
   "exclude": ["node_modules"]
