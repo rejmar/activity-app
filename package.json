@@ -17,8 +17,8 @@
   },
   "scripts": {
     "start": "webpack serve --config ./webpack.config.js --mode development",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "webpack",
+    "test": "jest",
     "eject": "react-scripts eject",
     "format": "pnpx prettier --write .",
     "prepare": "husky install"
@@ -28,6 +28,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   },
   "browserslist": {
     "production": [
@@ -45,6 +48,7 @@
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.14",
@@ -60,6 +64,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.0",
+    "jest": "^27.4.5",
     "jest-styled-components": "^7.0.8",
     "prettier": "2.5.1",
     "pretty-quick": "^3.1.2",
