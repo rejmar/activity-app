@@ -2,10 +2,12 @@ import { FunctionComponent } from "react";
 import { StyledButton, StyledHeader } from "./HeaderStyles";
 
 const Header: FunctionComponent = () => {
+  const handleClick = () => {};
+
   return (
     <StyledHeader>
       <h1>Feeling bored?</h1>
-      <StyledButton>Find me an activity!</StyledButton>
+      <StyledButton onClick={handleClick}>Find me an activity!</StyledButton>
     </StyledHeader>
   );
 };
