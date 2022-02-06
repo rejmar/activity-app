@@ -1,5 +1,5 @@
 import { FunctionComponent, useContext } from "react";
-import { DispatchContext } from "../App";
+import { DispatchContext } from "../contexts/appContext";
 import { StyledButton, StyledHeader } from "./HeaderStyles";
 
 const Header: FunctionComponent = () => {

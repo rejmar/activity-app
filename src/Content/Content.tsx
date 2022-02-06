@@ -1,7 +1,7 @@
 import { StyledContent } from "./ContentStyles";
 import BoredIcon from "../images/bored.png";
 import { useContext } from "react";
-import { DispatchContext, StateContext } from "../App";
+import { StateContext } from "../contexts/appContext";
 
 const Content: React.FunctionComponent = () => {
   const { activity } = useContext(StateContext);
