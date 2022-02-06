@@ -1,9 +1,12 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
+import { DispatchContext } from "../App";
 import { StyledButton, StyledHeader } from "./HeaderStyles";
 
 const Header: FunctionComponent = () => {
-  const handleClick = () => {};
-
+  const dispatch = useContext(DispatchContext);
+  const handleClick = () => {
+    dispatch({ type: "getActivity", payload: "Fascinating activity" });
+  };
   return (
     <StyledHeader>
       <h1>Feeling bored?</h1>
