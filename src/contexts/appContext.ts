@@ -4,7 +4,7 @@ export type ContextType = {
   activity: string;
 };
 export const initialContext: ContextType = {
-  activity: "Nothing to do",
+  activity: "",
 };
 
 export const reducer = (state: ContextType, action: ActionType) => {
